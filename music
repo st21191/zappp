@@ -1,0 +1,109 @@
+local Sound1 = game.Workspace.Music.Simple
+local Sound2 = game.Workspace.Music.apartment
+local Sound3 = game.Workspace.Music.silver
+local Sound4 = game.Workspace.Music.chaotic
+local Sound5 = game.Workspace.Music.universe
+local Sound6 = game.Workspace.Music.Iknow
+local Sound7 = game.Workspace.Music.inside
+i = 1
+-- A sound loop which goes through all the music
+---------------------------------------------
+while true do
+    Sound1:Play()
+    while i > 0 do
+        i = i - 0.1
+        Sound1.Volume = Sound1.Volume + 0.01
+        print(i)
+        wait(0.1)
+    end
+    wait(55)
+    while i < 1 do
+        i = i + 0.1
+        Sound1.Volume = Sound1.Volume - 0.01
+        print(i)
+        wait(0.1)
+    end
+    --
+    Sound2:Play()
+    while i > 0 do
+        i = i - 0.1
+        Sound2.Volume = Sound2.Volume + 0.01
+        wait(0.1)
+    end
+    wait(55)
+    while i < 1 do
+        i = i + 0.1
+        Sound2.Volume = Sound2.Volume - 0.01
+        wait(0.1)
+    end
+    --
+Sound3:Play()
+    while i > 0 do
+        i = i - 0.1
+        Sound3.Volume = Sound3.Volume + 0.01
+        print(i)
+        wait(0.1)
+    end
+    wait(55)
+    while i < 1 do
+        i = i + 0.1
+        Sound3.Volume = Sound3.Volume - 0.01
+        wait(0.1)
+    end
+    --
+    Sound4:Play()
+    while i > 0 do
+        i = i - 0.1
+        Sound4.Volume = Sound4.Volume + 0.01
+        print(i)
+        wait(0.1)
+    end
+    wait(55)
+    while i < 1 do
+        i = i + 0.1
+        Sound4.Volume = Sound4.Volume - 0.01
+        wait(0.1)
+    end
+    --
+    Sound5:Play()
+    while i > 0 do
+        i = i - 0.1
+        Sound5.Volume = Sound5.Volume + 0.01
+        print(i)
+        wait(0.1)
+    end
+    wait(55)
+    while i < 1 do
+        i = i + 0.1
+        Sound5.Volume = Sound5.Volume - 0.01
+        wait(0.1)
+    end
+    --
+    Sound6:Play()
+    while i > 0 do
+        i = i - 0.1
+        Sound6.Volume = Sound6.Volume + 0.01
+        print(i)
+        wait(0.1)
+    end
+    wait(55)
+    while i < 1 do
+        i = i + 0.1
+        Sound6.Volume = Sound6.Volume - 0.01
+        wait(0.1)
+    end
+    --
+    Sound7:Play()
+    while i > 0 do
+        i = i - 0.1
+        Sound7.Volume = Sound7.Volume + 0.01
+        print(i)
+        wait(0.1)
+    end
+    wait(55)
+    while i < 1 do
+        i = i + 0.1
+        Sound7.Volume = Sound7.Volume - 0.01
+        wait(0.1)
+    end
+end
