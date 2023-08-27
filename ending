@@ -1,0 +1,28 @@
+local debounce = false
+
+game.Workspace.Ending.Touched:Connect(function()
+    print("hi")
+    if debounce == false then
+        debounce = true
+        local i = 1
+        while i > 0 do 
+            i = i - 0.1
+            game.Players.LocalPlayer.PlayerGui.Ending.TextLabel.TextTransparency = game.Players.LocalPlayer.PlayerGui.Ending.TextLabel.TextTransparency - 0.1
+            game.Players.LocalPlayer.PlayerGui.Ending.ImageLabel.ImageTransparency = game.Players.LocalPlayer.PlayerGui.Ending.ImageLabel.ImageTransparency - 0.1
+            wait(0.1)
+        end
+        wait(1)
+        while i < 1 do
+            i = i + 0.1
+            game.Players.LocalPlayer.PlayerGui.Ending.TextLabel.TextTransparency = game.Players.LocalPlayer.PlayerGui.Ending.TextLabel.TextTransparency + 0.1
+            wait(0.1)
+        end
+        game.Players.LocalPlayer.PlayerGui.Ending.TextLabel.Text = "End."
+        wait(1)
+        while i > 0 do 
+            i = i - 0.1
+            game.Players.LocalPlayer.PlayerGui.Ending.TextLabel.TextTransparency = game.Players.LocalPlayer.PlayerGui.Ending.TextLabel.TextTransparency - 0.1
+            wait(0.1)
+        end
+    end
+end)
